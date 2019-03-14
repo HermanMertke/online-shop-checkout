@@ -1,33 +1,84 @@
-.App {
+.container{
+  margin: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.checkout-container {
+  margin-top: 100px;
+}
+
+.checkout-summary {
+  width: 300px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container label{
+  width: 30px;
+}
+
+.savings-title,
+.item-details-title,
+.promo-code-title{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
   text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fees-taxes{
+  max-width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.fees-taxes-title{
+  max-width: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.est-total-title,
+.est-total-price{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.subtotal-price,
+.savings-price,
+.est-total-price,
+.quantity{
+  float: right;
+  margin-right: 10px;
+}
+
+.fees-taxes-value{
+  margin-right: 15px;
+}
+
+.savings-price{
+  color: red;
+}
+
+.previous-price{
+  text-decoration-line: line-through;
+  color: grey; 
 }
